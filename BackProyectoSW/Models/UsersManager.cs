@@ -91,24 +91,24 @@ namespace BackProyectoSW.Models
                 cmd.Parameters.AddWithValue("@InputUserName", users.UserName);
                 cmd.Parameters.AddWithValue("@InputPassword", users.Password);
 
-                SqlDataReader dr = cmd.ExecuteReader();
-
-                while (dr.Read())
+                using (SqlDataReader dr = cmd.ExecuteReader())
                 {
-                    string role = dr.GetString(2).Trim();
-                    string username = dr.GetString(0).Trim();
-                    string password = dr.GetString(1).Trim();
+                    if (dr.HasRows) // Verificar si hay filas antes de intentar leer
+                    {
+                        while (dr.Read())
+                        {
+                            string role = dr.GetString(0).Trim();
 
-                    Users user = new Users(role, username, password);
-
-                    roles.Add(user);
+                            Users user = new Users(role);
+                            roles.Add(user);
+                        }
+                    }
                 }
-
-                dr.Close();
             }
 
             return roles;
         }
+
 
 
 

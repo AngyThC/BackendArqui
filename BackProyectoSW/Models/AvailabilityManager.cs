@@ -119,6 +119,7 @@ namespace BackProyectoSW.Models
                 cmd.Parameters.AddWithValue("@DailyMAX", availability.AvailibityReservationDailyMAX);
                 cmd.Parameters.AddWithValue("@WeeklyMAX", availability.AvailibityReservationWeeklyMAX);
                 cmd.Parameters.AddWithValue("@MonthlyMAX", availability.AvailibityReservationMonthlyMAX);
+                //jeje
 
                 try
                 {

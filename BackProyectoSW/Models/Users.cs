@@ -24,9 +24,9 @@ namespace BackProyectoSW.Models
             UserName = username;
         }
 
-        public Users( string rolename, string username)
+        public Users( string password, string username)
         {
-            RoleName = rolename;
+            Password = password;
             UserName = username;
         }
 
@@ -35,6 +35,11 @@ namespace BackProyectoSW.Models
             RoleName = rolename;
             UserName = username;
             Password = password;
+        }
+
+        public Users(string rolename)
+        {
+            RoleName = rolename;
         }
     }
 }

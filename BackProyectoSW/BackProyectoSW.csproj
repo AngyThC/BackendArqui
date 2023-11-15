@@ -169,6 +169,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\OrderDetailsController.cs" />
+    <Compile Include="Controllers\ReservacionController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\TypeMenuController.cs" />
     <Compile Include="Controllers\TypePayController.cs" />
@@ -191,6 +192,8 @@
     <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\OrderDetailsManager.cs" />
     <Compile Include="Models\OrderManager.cs" />
+    <Compile Include="Models\Reservation.cs" />
+    <Compile Include="Models\ReservacionesManager.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\RoleManager.cs" />
     <Compile Include="Models\TypeMenu.cs" />
@@ -231,6 +234,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Models\.editorconfig" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
